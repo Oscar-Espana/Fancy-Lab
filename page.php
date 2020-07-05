@@ -1,24 +1,15 @@
 <?php
 
 /**
- * The main template file
+ * The template for displaying all single posts
  *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Fancy Lab
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  */
-
 get_header();
 ?>
 
 <div class="content-area">
   <main>
-
     <div class="container">
       <div class="row">
         <?php
@@ -30,7 +21,7 @@ get_header();
             the_post();
         ?>
             <article>
-              <h2><?php the_title() ?></h2>
+              <h1><?php the_title() ?></h1>
               <div><?php the_content() ?></div>
             </article>
           <?php
