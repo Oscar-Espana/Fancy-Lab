@@ -1,22 +1,19 @@
 /*
 Theme Name: Fancy Lab
-Theme URI: https://www.initgrammers.com/themes/fancy-lab-theme
-Author: Oscar España
-Author URI: https://www.initgrammers.com
-Description: Fancy Lab is a compatible WooCommerce theme made with WordPress. It is the theme for you to sell anything online, beatufuly designed and fully responsive.
+Theme URI: http://www.inbrackets.dev/themes/fancy-lab-theme
+Author: inbrackets
+Author URI: http://www.inbrackets.dev
+Description: Fancy Lab is a compatible WooCommerce theme made with WordPress. It is the best theme for you to sell anything online, beautifuly designed and fully responsive.
 Version: 1.0
 Text-domain: fancy-lab
 License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/glp-2.0.html
-Tags: e-commerce, custom-menu, custom-logo, featured-image, footer-widgets, theme-options, translation-readym blog, right-sidebar, sticky-post, threaded-comments
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: e-commerce, custom-menu, custom-logo, featured-images, footer-widgets, theme-options, translation-ready, blog, right-sidebar, sticky-post, threaded-comments
 */
 
-.brand {
-  background: green;
-}
-
-.second-column {
-  background: yellow;
+/* Header - Main Menu */
+.main-menu {
+  padding: 0;
 }
 
 .main-menu ul {
@@ -30,6 +27,10 @@ Tags: e-commerce, custom-menu, custom-logo, featured-image, footer-widgets, them
 .main-menu ul li {
   display: inline;
   margin: 0 5px 0 0;
+}
+
+.main-menu ul li:last-child {
+  margin: 0;
 }
 
 /* Footer - Footer Menu */
@@ -176,6 +177,114 @@ Tags: e-commerce, custom-menu, custom-logo, featured-image, footer-widgets, them
 .woocommerce nav.woocommerce-pagination ul li a,
 .woocommerce nav.woocommerce-pagination ul li span {
   padding: 12px;
+}
+
+/* Single Product */
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.woocommerce ul.products li.product .button {
+  background-color: #d2335b;
+  color: #fff;
+}
+
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover,
+.woocommerce ul.products li.product .button:hover {
+  background-color: #bd3759;
+}
+
+.product_meta > span {
+  display: block;
+}
+
+.woocommerce div.product p.price del,
+.woocommerce div.product span.price del,
+.woocommerce ul.products li.product .price del .woocommerce-Price-amount {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.woocommerce div.product p.price ins,
+.woocommerce div.product span.price ins,
+.woocommerce-Price-amount {
+  font-size: 25px;
+  color: #000;
+  font-weight: 700;
+}
+
+.woocommerce span.onsale {
+  top: 19px;
+  left: 35px;
+  transform: rotate(90deg);
+  border-radius: 0;
+  width: 84px;
+  padding: 0;
+  background-color: #d2335b;
+  margin: 0;
+  font-weight: 400;
+}
+
+.woocommerce span.onsale:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 83px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 23px 22px 0 0;
+  border-color: #d2335b transparent transparent transparent;
+}
+
+.woocommerce span.onsale:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 83px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 22px 23px 0;
+  border-color: transparent transparent #d2335b transparent;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+  padding: 0;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+  border-radius: 0;
+  margin: 0;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li::after,
+.woocommerce div.product .woocommerce-tabs ul.tabs li::before {
+  content: none;
+}
+
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
+  background-color: #ffeb8a;
+}
+
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover {
+  background-color: #ffe252;
+}
+
+/* Cart */
+
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+  width: 150px;
 }
 
 /* General */
